@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form validation</h1>
+    <form action="" method="get" id="form">
+      <div>
+        <label for="firstname">FirstName:</label>
+        <input type="text" id="firstname" placeholder="firstname" />
+      </div>
+
+      <div>
+        <label for="lastname">LastName:</label>
+        <input type="text" id="lastname" placeholder="lastname" />
+      </div>
+
+      <div>
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="password" />
+      </div>
+
+      <div>
+        <label for="confirmpassword">confirm password:</label>
+        <input
+          type="password"
+          id="confirmpassword"
+          placeholder="confirmpassword"
+        />
+      </div>
+
+      <div>
+        <label for="email">email:</label>
+        <input type="text" id="email" placeholder="email" />
+      </div>
+
+      <div>
+        <label for="gender" id="gender">gender:</label>
+        <label>
+          <input type="radio" name="gender" value="male" id="male" />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" id="female" />
+          Female
+        </label>
+      </div>
+
+      <div>
+        <label for="degree">qualification:</label>
+        <select name="degree" id="degree">
+          <option value="BE">BE</option>
+          <option value="BSC">BSC</option>
+          <option value="ME">ME</option>
+          <option value="MSC">MSC</option>
+        </select>
+      </div>
+      <div class="error"></div>
+      <button type="submit" value="submit" id="btn">submit</button>
+    </form>
+  </body>
+</html>
